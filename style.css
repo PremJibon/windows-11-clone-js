@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icons{
+    width:70px;
+    margin-left:10px;
+}
+.icons img{
+    width:100%;
+}
+.icons p{
+    color:#fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+}
+.taskbar{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    background-color: white;
+    padding: 4px 0;
+    z-index:10;
+}
+#explorer-icon{
+    width:35px;
+    height:35px;
+    margin-bottom: 5px;
+}
+#right-taskbar{
+    position:absolute;
+    right:0;
+}
+#start-menu img{
+    width:500px;
+    position: absolute;
+    bottom:-100%;
+    left: calc(50% - 250px);
+    transition: .5s;
+
+}
+#start-menu img.show{
+    bottom: 65px;
+}
+
+#search img{
+    width:600px;
+    position: absolute;
+    bottom: -100%;
+    left: calc(50% - 300px);
+    transition: .5s;
+}
+#search img.show{
+    bottom: 65px;
+}
+
+#widgets img{
+    width:425px;
+    position: absolute;
+    top:0;
+    left: -100%;
+    transition: .5s;
+}
+#widgets img.show{
+    left:0;
+}
+
+#explorer img , #store img{
+    width:600px;
+    position: absolute;
+    top:-100%;
+    left: calc(50% - 300px);
+    transition: .5s;
+}
+#explorer img.show , #store img.show{
+    top:10px;
+}
